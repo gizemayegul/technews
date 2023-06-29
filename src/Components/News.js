@@ -16,7 +16,7 @@ const News = () => {
                 setData(response.data.articles);
             } catch (error) {
                 console.log(error);
-                setData(news.data.articles)
+                setData(news.articles)
             }
         };
         fetchData();
