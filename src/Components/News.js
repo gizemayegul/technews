@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import news from './news.json'
 
 const News = () => {
     const [data, setData] = useState([]);
@@ -15,6 +16,7 @@ const News = () => {
                 setData(response.data.articles);
             } catch (error) {
                 console.log(error);
+                setData(news.data.articles)
             }
         };
         fetchData();
