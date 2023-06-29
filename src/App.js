@@ -3,20 +3,14 @@ import News from './Components/News';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-        Tech News Aggreator
+    <div>
+      <header className='header'>
+        Tech News Aggregator
       </header>
       <body>
-        <div>
-          <p>
-            There will be a float about the tech News
-          </p>
-        </div>
-        <div>
-          <News />        
-          </div>
-
+      <section>
+        <News />
+      </section>
       </body>
 
     </div>
