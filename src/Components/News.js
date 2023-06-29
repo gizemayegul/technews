@@ -23,10 +23,9 @@ const News = () => {
 
 
     return (
-        <div>
+        <div className="container">
             {data.map((article) => (
-                <div key={article.title} className="container">
-                    <div className='card'>
+                    <div key={article.title} className='card'>
                         <div className='card__header'>
                             <img src={article.urlToImage} alt="card__image" class="card__image" width="600" />
                         </div>
@@ -35,7 +34,7 @@ const News = () => {
                             <h4>{article.title}</h4>
                             <p>{article.content.substring(0, 100)}</p>
                             <a href={article.url}>Read..</a>
-                        </div>
+                   ß     </div>
                         <div className='card__footer'>
                             <div className="user">
                                 <span className="tag tag-red">{article.source.name}</span>
@@ -43,7 +42,6 @@ const News = () => {
 
                         </div>
                     </div>
-                </div>
 
 
 
